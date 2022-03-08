@@ -1,3 +1,7 @@
+---
+youtubeId: w3X5v9lzWKs
+---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/FeedSatoshi/Feed-Satoshi/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
@@ -58,4 +62,4 @@ Syntax highlighted code block
 <iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
 ```
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+{% include youtubePlayer.html id=page.youtubeId %}
