@@ -102,12 +102,29 @@ p {
     width: 100%;
 }
 
+.copy
+{
+  color:#000000;
+  font-size:0px;
+}
+	
 </style>
 </head>
 <body>
 
 <h1 class="post-title p-name" itemprop="name headline">Feed Satoshi -  A place to learn</h1>
-<p>Satoshi is an Adopted Yellow Bellow Slider 🐢 - Send him a snack😉 </p>
+<p>Satoshi is an Adopted Yellow Bellow Slider 🐢 - Send him a snack😉  by scanning the qr code or <button type="button" onclick="copyEvent('copy')">Click here to copy LNURL Instead</button></p>
+
+
+
+<script>
+    function copyEvent(id)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+    }
+</script>
 <!-- Add a placeholder for the Twitch embed -->
 
 <div class="twitch">
@@ -153,6 +170,6 @@ p {
       </div>
 
 
-
+<p class="copy"  id="copy">LNURL1DP68GURN8GHJ7DNPV5UJ6DEJ95CNSWPDXYCNYTF4XQHXUEMJDA4JU6T09AKXUATJD3CZ7CTSDYHHVVF0D3H82UNV9UCSVLX3EX</p>
 </body>
 </html>
