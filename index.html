@@ -1,24 +1,147 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+body {
+  background-color: rgba(26,26,26,1);
+  color: #fcfcfc;
+  font: 400 18px/1.6 "Merriweather", Georgia, serif;
+ 
+  
+}
+
+body {
+    
+    
+    
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: 'kern' 1;
+    -moz-font-feature-settings: 'kern' 1;
+    -o-font-feature-settings: 'kern' 1;
+    font-feature-settings: 'kern' 1;
+    font-kerning: normal;
+}
+a{
+	color: #bf94ff;
+    text-decoration: none;
+}
+
+.twitch .twitch-video {
+  padding-top: 56.25%;
+  position: relative;
+  height: 0;
+  margin-bottom: 30px;
+}
+
+.twitch .twitch-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.myDiv {
+  border: 5px outset orange;
+  background-color: rgb(30,129,176);    
+  text-align: center;
+  
+}
+
+@media screen and (min-width: 700px)
+.post-title, .page-title {
+    font-size: 54px;
+}
+.post-title, .page-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1;
+    margin: 60px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+p {
+    --bg-color: rgba(26,26,26,1);
+    --text-color: rgba(110,110,110,1);
+    --a-color: rgba(90,120,120,1);
+    --a-visited-color: rgba(120,120,90,1);
+    --a-hover-color: rgba(211,211,211,1);
+    --input-border-color: rgba(211,211,211,0.2);
+    --input-placeholder-color: rgba(173,216,230,1);
+    --dialog-bg-color: rgba(36,36,36,0.95);
+    --bg-image: linear-gradient(rgba(26,26,26,1),rgba(26,26,26,1));
+    font: 400 18px/1.6 "Merriweather", Georgia, serif;
+    color: #fcfcfc;
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: 'kern' 1;
+    font-kerning: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+
+.cell {
+    padding: 0 15px;
+    float: left;
+    display: block;
+    margin: 0;
+}
+
+@media screen and (min-width: 700px)
+.cell-med-9 {
+    width: 75%;
+}
+.cell-12 {
+    width: 100%;
+}
+
+</style>
+</head>
 <body>
 
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-  
-  
+<h1 class="post-title p-name" itemprop="name headline">Feed Satoshi -  A place to learn</h1>
+
 <!-- Add a placeholder for the Twitch embed -->
-<div id="twitch-embed"></div>
 
-<!-- Load the Twitch embed script -->
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<div class="twitch">
+  <div class="twitch-video">
+<iframe src="https://player.twitch.tv/?channel=feedsatoshi&parent=www.w3schools.com" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe> 
+</div>
+  </div>
 
-<!-- Create a Twitch.Player object. This will render within the placeholder div -->
-<script type="text/javascript">
-  new Twitch.Player("twitch-embed", {
-    channel: "feedsatoshi"
-  });
-</script>  
+<!--
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+-->
+
+<p><strong><u>Feed Satoshi is in ALPHA</u> - Expect the unexpected & <em>PLEASE PLZ PLS Dont abuse Satoshi</em> :)</strong></p>
+
+<div class="post-content cell cell-12 cell-med-9 e-content" itemprop="articleBody">
+<h2 id="the-html">About the project</h2>
+        <p>I’ve wanted to comibine my passion for bitcoin with my knowledge of engineering and computer science. This project demostrates the capability of Decentriled, Permisionless, Borderless Money. You can find us on <a href="https://twitter.com/FeedSatoshi">Twitter</a> to chat, ask questions or make suggestions to improve to project and the learning experience.  </p>
+        
+</p> I am using Twitch to live stream and have embeded it on this page to keep everything in one place! The Stream Delay is about 12 Seconds so please be patient when feeding Satoshi. <strong>Please Only feed him after there is no more food visible</strong> - Thank you and Enjoy!</p>
+
+<h2 id="the-html">FAQ - New to Bitcoin?</h2>
+</p>TLDR: Download <a href="https://www.walletofsatoshi.com/">Wallet of Satoshi</a> and Scan the QR to FeedSatoshi</p>
+
+<h2 id="the-html">TODO</h2>
+<ul>
+	<li>Add more To FAQ</li>
+    <li>Add more to TODO</li>
+</ul>
+
+      </div>
+
+
 
 </body>
 </html>
