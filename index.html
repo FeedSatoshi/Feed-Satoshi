@@ -29,6 +29,15 @@ a{
 }
 
 .twitter{
+  position: relative;
+  right: 0px;
+  width: 25%;
+  height: 1vw;
+  float: right;
+  padding: 10px;
+}
+
+.twitter iframe{
   position: absolute;
   right: 0px;
   width: 25%;
@@ -39,15 +48,17 @@ a{
 
 .twitch .twitch-video {
   padding-top: 56.25%;
-	padding-left: 7%;
+	padding-left: 1%;
   position: relative;
+  
   height: 0;
   margin-bottom: 30px;
 }
 
 .twitch .twitch-video iframe {
   position: absolute;
-  width: 86%;
+  
+  width: 73%;
   height: 100%;
   top: 0;
 }
@@ -143,7 +154,7 @@ p {
 </div>
 <!-- End Twitter Code-->
 
-<!-- Add a placeholder for the Twitch embed -->
+<!-- Start Twitch Code-->
 
 <div class="twitch">
   <div class="twitch-video">
@@ -157,9 +168,11 @@ p {
 <script type="text/javascript">
   new Twitch.Player("twitch-embed", {
     channel: "feedsatoshi"
+    <!--parent: ["127.0.0.1"] might need this-->
   });
 </script> </div>
   </div>
+<!-- End Twitch Code -->
 
 <!--
 <div class="myDiv">
