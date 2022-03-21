@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body {
   background-color: rgba(26,26,26,1);
@@ -26,17 +28,41 @@ a{
     text-decoration: none;
 }
 
+.twitter{
+  position: relative;
+  right: 0px;
+  width: 25%;
+  
+  float: right;
+  padding: 10px;
+}
+
+.twitter iframe{
+  position: absolute;
+  right: 0px;
+  width: 25%;
+  height: auto;
+  max-height: 750px;
+  align: right;
+  padding: 10px;
+}
+
+#twitter-widget-0 {height:100vw !important;}
+
+
 .twitch .twitch-video {
   padding-top: 56.25%;
-	padding-left: 7%;
+	padding-left: 1%;
   position: relative;
+  
   height: 0;
   margin-bottom: 30px;
 }
 
 .twitch .twitch-video iframe {
   position: absolute;
-  width: 86%;
+  
+  width: 73%;
   height: 100%;
   top: 0;
 }
@@ -125,7 +151,14 @@ p {
         document.execCommand("Copy")
     }
 </script>
-<!-- Add a placeholder for the Twitch embed -->
+
+<!-- Start Twitter Code-->
+<div class="twitter">
+<a class="twitter-timeline" data-lang="en" data-theme="dark" href="https://twitter.com/FeedSatoshi?ref_src=twsrc%5Etfw">Tweets by FeedSatoshi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</div>
+<!-- End Twitter Code-->
+
+<!-- Start Twitch Code-->
 
 <div class="twitch">
   <div class="twitch-video">
@@ -142,6 +175,7 @@ p {
   });
 </script> </div>
   </div>
+<!-- End Twitch Code -->
 
 <!--
 <div class="myDiv">
