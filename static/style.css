@@ -22,6 +22,8 @@ body {
       text-decoration: none;
   }
   
+
+  /* Start Twitter embed styling */
   .twitter{
     position: relative;
     right: 0px;
@@ -42,8 +44,9 @@ body {
   }
   
   #twitter-widget-0 {height:100vw !important;}
+  /* End Twitter embed styling */
   
-  
+/* Start Twitch embed styling */
   .twitch .twitch-video {
     padding-top: 56.25%;
       padding-left: 1%;
@@ -60,13 +63,7 @@ body {
     height: 100%;
     top: 0;
   }
-  
-  .myDiv {
-    border: 5px outset orange;
-    background-color: rgb(30,129,176);    
-    text-align: center;
-    
-  }
+  /* End Twitch embed styling */
   
   @media screen and (min-width: 700px)
   {
@@ -125,9 +122,24 @@ body {
       width: 100%;
   }
   
+  /* Probably a better way to hide text for the copy selection*/
   .copy
   {
     color:#000000;
     font-size:0px;
   }
-      
+
+  /* Creates custom list style type*/
+  @counter-style repeating-emoji {
+    system: cyclic;
+    symbols: "\1F431" "\1F436" "\1F984"; // unicode code point
+    suffix: " ";
+  }
+
+  /* Repalce list bullet with text/emoji */
+ul li.checked {
+  list-style-type: repeating-emoji;
+  text-decoration-line: line-through;
+  color: #2cba6c;
+  
+}
